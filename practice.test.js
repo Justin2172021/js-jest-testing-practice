@@ -23,3 +23,23 @@ test("A calculator object that contains functions for the basic operations: MULT
 test("A calculator object that contains functions for the basic operations: DIVIDE", () => {
     expect(practice.calculator.div(10,2)).toBe(5);
 });
+
+test("A caesarCipher function that takes a string and returns it with each character “shifted”", () => {
+    expect(practice.caesarCipher("Zebra!")).toBe("Afcsb!");
+});
+
+test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
+    expect(practice.analyzeArray([1,8,3,4,2,6])).toStrictEqual({average: 4, min: 1, max: 8, length: 6});
+});
+
+test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
+    expect(practice.analyzeArray([1,1,1])).toStrictEqual({average: 1, min: 1, max: 1, length: 3});
+});
+
+test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
+    expect(practice.analyzeArray([0])).toStrictEqual({average: 0, min: 0, max: 0, length: 1});
+});
+
+test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
+    expect(practice.analyzeArray([-1, -1, 1, 1])).toStrictEqual({average: 0, min: -1, max: 1, length: 4});
+});
